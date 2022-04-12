@@ -3,14 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http'
+import { DatatableComponent } from './users/datatable/datatable.component';
+import { NgDatatableComponent } from './users/ng-datatable/ng-datatable.component';
+import { NavbarComponent } from './shared/navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatatableComponent,
+    NgDatatableComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "7eb71acf-668c-42e3-b2a3-5716239170db"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -31,9 +34,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/datatables.net/js/jquery.dataTables.min.js",
+              "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.min.js"
+            ]
           },
           "configurations": {
             "production": {
